@@ -1,3 +1,12 @@
+echo "credentials for the runner"
+
+echo "Enter URL of Repository ::"
+read $URLREPO
+
+echo "Enter Token ::"
+read $Token
+
+
 # Create a folder for the GitHub Actions Runner
 mkdir actions-runner && cd actions-runner
 
@@ -16,7 +25,7 @@ echo "Downloaded GitHub Actions Runner successfully."
 sleep 1
 
 # Configure the GitHub Actions Runner
-./config.sh
+./config.sh --url $URLREPO --token $Token
 
 # Start the GitHub Actions Runner
 ./run.sh
