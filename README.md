@@ -1,6 +1,7 @@
 # DevOpsPractice
 **Devops Practice projects Linux to K8s**
-**By Roadmap.sh** 
+
+**My expereince and future reference for my devops journey**
 
 **1.GitHub Pages Deployment:: https://github.com/NarmalaSk/DevOpsPractice/blob/main/Projects/githubpagesdep.yml**
 
