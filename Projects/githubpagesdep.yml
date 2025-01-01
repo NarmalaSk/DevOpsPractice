@@ -1,0 +1,20 @@
+# File: .github/workflows/deploy-github-pages.yml
+name: Deploy HTML App to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Trigger workflow on push to the main branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3  # Step to pull the latest code from the repository
+
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@v4.7.2
+      with:
+          folder: ./ # The folder the action should deploy.irectory where your HTML files are located (root in this case)
